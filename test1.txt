@@ -1,0 +1,32 @@
+common string prog:
+input:
+daybreak
+breakdown
+
+output:
+break
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String s2=sc.nextLine();
+		String p=" ";
+		for(int i=0;i<s.length();i++) {
+			if(s.substring(i).equals(s2.substring(0,s.length()-i))) {
+				p=(s.substring(i));
+				break;
+			}	
+		}
+		System.out.println(p);
+		sc.close();
+
+	}
+}
